@@ -12,6 +12,8 @@ import * as $custom_handler_index from "./routes/custom_handler/index.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $ola_name_surname_ from "./routes/ola/[name]/[surname].tsx";
 import * as $search from "./routes/search.tsx";
+import * as $tabs_TabResult from "./routes/tabs/TabResult.ts";
+import * as $tabs_tab_id_ from "./routes/tabs/[tab_id].tsx";
 import * as $Countdown from "./islands/Countdown.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -28,6 +30,8 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/ola/[name]/[surname].tsx": $ola_name_surname_,
     "./routes/search.tsx": $search,
+    "./routes/tabs/TabResult.ts": $tabs_TabResult,
+    "./routes/tabs/[tab_id].tsx": $tabs_tab_id_,
   },
   islands: {
     "./islands/Countdown.tsx": $Countdown,
