@@ -19,7 +19,7 @@ import process from "node:process";
 // export default app
 
 const serviceAccount = JSON.parse(
-	process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string,
+	process.env.FIREBASE_SERVICE_ACCOUNT_KEY || "{}",
 );
 
 if (!getApps().length) {
